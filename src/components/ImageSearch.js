@@ -20,7 +20,6 @@ const ImageSearch = () => {
                 }
                 const data = await res.json();
                 setImages(data.hits);
-                setIsLoading(false);
             } catch (e) {
                 setIsError(true);
             } finally {
